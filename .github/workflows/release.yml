@@ -5,7 +5,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  NAMESPACE: liteldev
+  NAMESPACE: WeddedMercury15
   IMAGE_NAME: levilamina-server
 
 jobs:
