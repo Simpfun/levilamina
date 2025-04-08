@@ -11,7 +11,7 @@ fi
 
 if [ ! -d "/root/.wine" ]
 then
-    LC_ALL="zh_CN.UTF8" winecfg
+    LC_ALL="C.UTF8" winecfg
     xvfb-run -a winetricks -q cjkfonts vcrun2022 riched20
 fi
 
@@ -42,4 +42,4 @@ then
     done
 fi
 
-cat | wine64 bedrock_server_mod.exe
+LC_ALL="C.UTF8" wine64 bedrock_server_mod.exe
