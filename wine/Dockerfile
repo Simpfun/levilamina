@@ -1,15 +1,6 @@
 FROM debian:12-slim
 
 RUN apt update \
-       && apt install -y locales \
-       && locale-gen en_US.UTF-8 zh_CN.UTF-8 \
-       && apt clean \
-       && rm -rf /var/lib/apt/lists/*
-
-ENV LANG zh_CN.UTF-8
-ENV LC_ALL zh_CN.UTF-8
-
-RUN apt update \
        && apt install -y \
        unzip \
        wget \
