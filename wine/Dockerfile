@@ -1,7 +1,7 @@
 FROM debian:12-slim
 
 RUN apt update \
-       && apt install -y locales language-pack-zh-hans \
+       && apt install -y locales \
        && locale-gen en_US.UTF-8 zh_CN.UTF-8 \
        && apt clean \
        && rm -rf /var/lib/apt/lists/*
