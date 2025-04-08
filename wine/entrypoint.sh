@@ -11,8 +11,8 @@ fi
 
 if [ ! -d "/root/.wine" ]
 then
-    winecfg
-    xvfb-run -a winetricks -q vcrun2022
+    LC_ALL="zh_CN.UTF8" winecfg
+    xvfb-run -a winetricks -q cjkfonts vcrun2022 riched20
 fi
 
 export WINEDEBUG="${WINEDEBUG:--all}"
