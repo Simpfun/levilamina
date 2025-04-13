@@ -37,4 +37,4 @@ if [ ! -f "bedrock_server_mod.exe" ]; then
     fi
 fi
 
-LC_ALL=C.utf8 wine64 cmd
+LC_ALL=C.utf8 bash
